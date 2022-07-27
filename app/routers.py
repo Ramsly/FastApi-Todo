@@ -39,10 +39,10 @@ async def get_todo(id: int, db: Session = Depends(get_db)):
 
 @router.put('/is_done/{id}', response_model=TodoResponseScheme)
 async def todo_is_done(id: int, db: Session = Depends(get_db)):
-    return toggle_is_done(db, id)
+    return toggle_is_done(db, todo_id=id)
 
 
-@router.put('/change_content', response_model=TodoResponseScheme)
+@router.put('/change_content/{id}', response_model=TodoResponseScheme)
 async def change_content(id: int, content: str, db: Session = Depends(get_db)):
     return update_todo(db, todo_id=id, content=content)
 
