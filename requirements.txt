@@ -1,8 +1,4 @@
 SQLAlchemy==1.4.39
 fastapi==0.79.0
 pydantic==1.9.1
-python-dotenv==0.20.0
 uvicorn==0.18.2
-psycopg2==2.9.3
-psycopg2-binary==2.9.3
-alembic==1.8.1
