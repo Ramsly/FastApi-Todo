@@ -6,6 +6,9 @@ from .depends import get_db
 from .schemas.request import DataForTodoScheme
 from .schemas.response import TodoResponseScheme
 from .crud import get_todos, create_todo, get_todo_by_id, delete, toggle_is_done, update_todo
+from .database import Base, engine
+
+Base.metadata.create_all(bind=engine)
 
 router = APIRouter(
     prefix="/todo",
