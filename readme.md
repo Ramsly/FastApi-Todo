@@ -25,6 +25,11 @@ https://github.com/Ramil2003/FastApi-Todo.git
 python3 -m venv venv
 ```
 
+Активируйте его:
+```
+source /venv/bin/activate
+```
+
 Установите зависимости:
 ```
 pip install -r requirements.txt
